@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/Ch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />
+
+    <TextView
+        android:id="@+id/ID"
+        android:layout_toRightOf="@+id/Ch"
+        android:layout_width="189dp"
+        android:layout_height="32dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:text="ID"/>
+    <TextView
+        android:id="@+id/SID"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/ID"
+        android:layout_width="189dp"
+        android:layout_height="32dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="189dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/Ch"
+        android:layout_marginLeft="1dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:text="Name"
+
+        android:layout_toRightOf="@id/Ch" />
+
+    <TextView
+        android:id="@+id/sname"
+        android:layout_toRightOf="@id/ID"
+        android:layout_below="@+id/SID"
+        android:layout_width="189dp"
+        android:layout_height="32dp" />
+    <TextView
+        android:id="@+id/Password"
+        android:layout_width="189dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/name"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:text="Password"
+        android:layout_toRightOf="@id/Ch"/>
+    <TextView
+        android:id="@+id/Spassword"
+        android:layout_width="189dp"
+        android:layout_height="32dp"
+        android:layout_toRightOf="@id/Password"
+        android:layout_below="@id/sname"/>
+    <TextView
+        android:id="@+id/Email"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:text="Email"
+        android:layout_width="189dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/Password"
+        android:layout_toRightOf="@id/Ch"/>
+    <TextView
+        android:id="@+id/SEmail"
+        android:layout_width="189dp"
+        android:layout_height="32dp"
+        android:layout_toRightOf="@+id/Email"
+        android:layout_below="@id/Spassword"/>
+</RelativeLayout>
